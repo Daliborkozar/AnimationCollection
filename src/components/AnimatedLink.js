@@ -15,12 +15,12 @@ const LinkStyle = styled.a`
     cursor: pointer;
 `;
 
-const Pstyle = styled.p`
-    font-size: 30px;
+const Pstyle = styled('p')`
+    font-size: 20px;
 `
    
 
-const AnimatedBT = () => {
+const AnimatedLink = () => {
     return (
         <>
         <Pstyle>Lorem ipsum dolor <LinkStyle>nisi ut aliquip</LinkStyle> perspiciatis</Pstyle>
@@ -28,4 +28,4 @@ const AnimatedBT = () => {
     )
 }
 
-export default AnimatedBT
+export { AnimatedLink }

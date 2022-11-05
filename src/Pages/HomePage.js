@@ -1,13 +1,23 @@
 import React from 'react'
-import AnimatedBT from '../Links/AnimatedBT'
+import styled from 'styled-components'
+import { AnimatedLink } from '../components/AnimatedLink'
+import { HoverAnim1 } from '../components/HoverAnim1'
+import Canvas from '../components/Canvas'
+
+const Wrapper = styled('div')`
+    margin-top: 30px;
+    margin-left: 40px;
+`
 
 const HomePage = () => {
     return (
-        <div>
+        <Wrapper>
             <h1>Text</h1>
-            <AnimatedBT />
+            <AnimatedLink />
             <h1>Buttons</h1>
-        </div>
+            <HoverAnim1/>
+            <h1><Canvas/></h1>
+        </Wrapper>
     )
 }
 
